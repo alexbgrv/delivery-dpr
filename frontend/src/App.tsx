@@ -14,6 +14,7 @@ function App() {
         <button><img src={ozon} alt="image ozon" /></button>
         <button><img src={yandex} alt="image yandex" /></button>
       </div>
+     <div className="bg"></div>
     </div>
   );
 }
