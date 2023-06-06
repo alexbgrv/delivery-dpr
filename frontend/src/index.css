@@ -45,22 +45,3 @@ code {
 }
 
 
-.conteiner-Widget img{
-  width: 120px;
-  padding: 20px;
-}
-
-.conteiner-Widget button {
-  width: 150px;
-  height: 150px;
-  border: none;
-  background-color: transparent;
-  transition-duration: 0.2s
-}
-
-
-.conteiner-Widget button:hover {
-  transform: scale(1.07); 
- 
-}
-

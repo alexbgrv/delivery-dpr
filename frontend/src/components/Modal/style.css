@@ -1,0 +1,88 @@
+@keyframes showBackdrop {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes showModal {
+    0% {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: -300px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.041);
+    animation: showBackdrop 0.3s ease-out;
+  }
+  
+  .modal {
+    
+    background: #ffffff;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.144);
+    border-radius: 10px;
+    animation: showModal 0.3s ease-out;
+  }
+  
+  .modal-header {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+  
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+
+
+  .ImgLogo{
+    width: 75px;
+  }
+
+
+
+  .modal-body h2 {
+    display: flex;
+    justify-content: center;
+  } 
+
+  .modal-body div {
+    margin-bottom: 30px;
+  } 
+  
+  .btn-close{
+    float: right;
+  }
+  .searchMarket{
+  
+    width: 80%;
+  }
+  .searchMarket input{
+    height: 28px;
+    width: 90%;
+  }
+
+  .searchMarket button{
+    height: 34px;
+    width: 50px;
+  }

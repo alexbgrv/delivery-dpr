@@ -1,0 +1,41 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    }
+.controls button{
+    border: none;
+    background-color: rgb(0, 98, 255);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+
+.conteiner-Widget img{
+  width: 120px;
+  padding: 20px;
+}
+
+
+
+.conteiner-Widget button {
+  width: 150px;
+  height: 150px;
+  border: none;
+  background-color: transparent;
+  transition-duration: 0.2s
+}
+
+
+.conteiner-Widget button:hover {
+  transform: scale(1.07); 
+ 
+}
+
