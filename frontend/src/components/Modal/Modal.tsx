@@ -1,6 +1,8 @@
 import React, { ReactNode, FC, useState, useContext } from "react";
+import ReactDOM from 'react-dom';
 import "./style.css";
 import { ModalContext } from "../../Context";
+import { Controls } from "../../components/controls/controls"
 interface Props {
   children: ReactNode;
   title: string;
@@ -10,10 +12,15 @@ export const Modal: FC<Props> = ({ children, title }) => {
 
   const { closeModal } = useContext(ModalContext);
 
-  const clickClose = () =>{
-    closeModal()
+  const clickClose = (event: React.MouseEvent<HTMLButtonElement>) =>{
+    const widgetContainer = document.querySelector('.conteiner-Widget') as HTMLElement;
+    
+    widgetContainer.style.display = 'flex';
+    const button = event.target as HTMLButtonElement;
+    button.style.display = "block";
+    closeModal();
   }
-
+  
   return (
     <div className="backdrop">
       
