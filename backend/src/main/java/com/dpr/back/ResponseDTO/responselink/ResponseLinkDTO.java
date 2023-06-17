@@ -7,7 +7,6 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.UUID;
 
-@Data
 public class ResponseLinkDTO {
 
     private String UUID;
@@ -19,5 +18,44 @@ public class ResponseLinkDTO {
         this.Link = requestLinkDTO.getLink();
         this.shopName = new Logic().createShopName(requestLinkDTO);
     }
+
+    public String getUUID() {
+        return UUID;
+    }
+
+    public void setUUID(String UUID) {
+        this.UUID = UUID;
+    }
+
+    public String getLink() {
+        return Link;
+    }
+
+    public void setLink(String link) {
+        Link = link;
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    /*public ArrayList<String> links = new ArrayList<>();
+
+    public String createShopName(RequestLinkDTO requestLinkDTO) {
+        links.add("wildberries");
+        links.add("ozon");
+        links.add("aliexpress");
+        links.add("market.yandex");
+
+        for (String item:
+                links) {
+            if (requestLinkDTO.getLink().contains(item)) setShopName(item);
+        }
+        return getShopName();
+    }*/
 
 }

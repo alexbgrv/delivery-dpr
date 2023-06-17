@@ -9,7 +9,6 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@SpringBootApplication
 public class AppController {
     private final Logger log = LogManager.getLogger(AppController.class);
 

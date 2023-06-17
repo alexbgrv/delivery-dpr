@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Logic {
     public ArrayList<String> links = new ArrayList<>();
     public String createShopName(RequestLinkDTO requestLinkDTO) {
-        ResponseLinkDTO dto = new ResponseLinkDTO(requestLinkDTO);
+        //ResponseLinkDTO dto = new ResponseLinkDTO(requestLinkDTO);
         links.add("wildberries");
         links.add("ozon");
         links.add("aliexpress");
@@ -17,8 +17,8 @@ public class Logic {
         String link = requestLinkDTO.getLink();
         for (String item:
                 links) {
-            if (link.contains(item)) dto.setShopName(item);
+            if (link.contains(item)) return item;
         }
-        return dto.getShopName();
+        return "";
     }
 }
